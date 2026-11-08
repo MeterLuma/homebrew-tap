@@ -15,12 +15,12 @@ cask "meterluma" do
   end
 
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "MeterLuma.app"
 
-  uninstall quit:      "app.meterluma.desktop",
-            launchctl: "MeterLuma"
+  uninstall launchctl: "MeterLuma",
+            quit:      "app.meterluma.desktop"
 
   zap trash: [
     "~/Library/Application Support/app.meterluma.desktop",
