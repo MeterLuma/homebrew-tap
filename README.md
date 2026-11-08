@@ -3,7 +3,7 @@
 Install [MeterLuma](https://meterluma.com), the menu-bar meter for AI coding tool allowances and reset times:
 
 ```sh
-brew install --cask youssefrigale/tap/meterluma
+brew install --cask meterluma/tap/meterluma
 ```
 
 The cask downloads the universal disk image from `downloads.meterluma.com` and checks it against the SHA-256 recorded here. It needs macOS 13 Ventura or later on Apple silicon or Intel.
